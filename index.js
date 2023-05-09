@@ -16,6 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 app.use("/",mainRouter)
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Connect on port ${port}`)
   })
